@@ -18,43 +18,37 @@ final _privateConstructorUsedError = UnsupportedError(
 mixin _$UserListEvent {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function() started,
     required TResult Function() loadData,
-    required TResult Function(User user) tapOnUserFromList,
+    required TResult Function() tapOnUserFromList,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? started,
     TResult? Function()? loadData,
-    TResult? Function(User user)? tapOnUserFromList,
+    TResult? Function()? tapOnUserFromList,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? started,
     TResult Function()? loadData,
-    TResult Function(User user)? tapOnUserFromList,
+    TResult Function()? tapOnUserFromList,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_Started value) started,
     required TResult Function(_LoadData value) loadData,
     required TResult Function(_TapOnUserFromList value) tapOnUserFromList,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_Started value)? started,
     TResult? Function(_LoadData value)? loadData,
     TResult? Function(_TapOnUserFromList value)? tapOnUserFromList,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_Started value)? started,
     TResult Function(_LoadData value)? loadData,
     TResult Function(_TapOnUserFromList value)? tapOnUserFromList,
     required TResult orElse(),
@@ -78,113 +72,6 @@ class _$UserListEventCopyWithImpl<$Res, $Val extends UserListEvent>
   final $Val _value;
   // ignore: unused_field
   final $Res Function($Val) _then;
-}
-
-/// @nodoc
-abstract class _$$_StartedCopyWith<$Res> {
-  factory _$$_StartedCopyWith(
-          _$_Started value, $Res Function(_$_Started) then) =
-      __$$_StartedCopyWithImpl<$Res>;
-}
-
-/// @nodoc
-class __$$_StartedCopyWithImpl<$Res>
-    extends _$UserListEventCopyWithImpl<$Res, _$_Started>
-    implements _$$_StartedCopyWith<$Res> {
-  __$$_StartedCopyWithImpl(_$_Started _value, $Res Function(_$_Started) _then)
-      : super(_value, _then);
-}
-
-/// @nodoc
-
-class _$_Started implements _Started {
-  const _$_Started();
-
-  @override
-  String toString() {
-    return 'UserListEvent.started()';
-  }
-
-  @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_Started);
-  }
-
-  @override
-  int get hashCode => runtimeType.hashCode;
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function() started,
-    required TResult Function() loadData,
-    required TResult Function(User user) tapOnUserFromList,
-  }) {
-    return started();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? started,
-    TResult? Function()? loadData,
-    TResult? Function(User user)? tapOnUserFromList,
-  }) {
-    return started?.call();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? started,
-    TResult Function()? loadData,
-    TResult Function(User user)? tapOnUserFromList,
-    required TResult orElse(),
-  }) {
-    if (started != null) {
-      return started();
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(_Started value) started,
-    required TResult Function(_LoadData value) loadData,
-    required TResult Function(_TapOnUserFromList value) tapOnUserFromList,
-  }) {
-    return started(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_Started value)? started,
-    TResult? Function(_LoadData value)? loadData,
-    TResult? Function(_TapOnUserFromList value)? tapOnUserFromList,
-  }) {
-    return started?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(_Started value)? started,
-    TResult Function(_LoadData value)? loadData,
-    TResult Function(_TapOnUserFromList value)? tapOnUserFromList,
-    required TResult orElse(),
-  }) {
-    if (started != null) {
-      return started(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class _Started implements UserListEvent {
-  const factory _Started() = _$_Started;
 }
 
 /// @nodoc
@@ -225,9 +112,8 @@ class _$_LoadData implements _LoadData {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function() started,
     required TResult Function() loadData,
-    required TResult Function(User user) tapOnUserFromList,
+    required TResult Function() tapOnUserFromList,
   }) {
     return loadData();
   }
@@ -235,9 +121,8 @@ class _$_LoadData implements _LoadData {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? started,
     TResult? Function()? loadData,
-    TResult? Function(User user)? tapOnUserFromList,
+    TResult? Function()? tapOnUserFromList,
   }) {
     return loadData?.call();
   }
@@ -245,9 +130,8 @@ class _$_LoadData implements _LoadData {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? started,
     TResult Function()? loadData,
-    TResult Function(User user)? tapOnUserFromList,
+    TResult Function()? tapOnUserFromList,
     required TResult orElse(),
   }) {
     if (loadData != null) {
@@ -259,7 +143,6 @@ class _$_LoadData implements _LoadData {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_Started value) started,
     required TResult Function(_LoadData value) loadData,
     required TResult Function(_TapOnUserFromList value) tapOnUserFromList,
   }) {
@@ -269,7 +152,6 @@ class _$_LoadData implements _LoadData {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_Started value)? started,
     TResult? Function(_LoadData value)? loadData,
     TResult? Function(_TapOnUserFromList value)? tapOnUserFromList,
   }) {
@@ -279,7 +161,6 @@ class _$_LoadData implements _LoadData {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_Started value)? started,
     TResult Function(_LoadData value)? loadData,
     TResult Function(_TapOnUserFromList value)? tapOnUserFromList,
     required TResult orElse(),
@@ -300,10 +181,6 @@ abstract class _$$_TapOnUserFromListCopyWith<$Res> {
   factory _$$_TapOnUserFromListCopyWith(_$_TapOnUserFromList value,
           $Res Function(_$_TapOnUserFromList) then) =
       __$$_TapOnUserFromListCopyWithImpl<$Res>;
-  @useResult
-  $Res call({User user});
-
-  $UserCopyWith<$Res> get user;
 }
 
 /// @nodoc
@@ -313,90 +190,54 @@ class __$$_TapOnUserFromListCopyWithImpl<$Res>
   __$$_TapOnUserFromListCopyWithImpl(
       _$_TapOnUserFromList _value, $Res Function(_$_TapOnUserFromList) _then)
       : super(_value, _then);
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? user = null,
-  }) {
-    return _then(_$_TapOnUserFromList(
-      null == user
-          ? _value.user
-          : user // ignore: cast_nullable_to_non_nullable
-              as User,
-    ));
-  }
-
-  @override
-  @pragma('vm:prefer-inline')
-  $UserCopyWith<$Res> get user {
-    return $UserCopyWith<$Res>(_value.user, (value) {
-      return _then(_value.copyWith(user: value));
-    });
-  }
 }
 
 /// @nodoc
 
 class _$_TapOnUserFromList implements _TapOnUserFromList {
-  const _$_TapOnUserFromList(this.user);
-
-  @override
-  final User user;
+  const _$_TapOnUserFromList();
 
   @override
   String toString() {
-    return 'UserListEvent.tapOnUserFromList(user: $user)';
+    return 'UserListEvent.tapOnUserFromList()';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$_TapOnUserFromList &&
-            (identical(other.user, user) || other.user == user));
+        (other.runtimeType == runtimeType && other is _$_TapOnUserFromList);
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, user);
-
-  @JsonKey(ignore: true)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$_TapOnUserFromListCopyWith<_$_TapOnUserFromList> get copyWith =>
-      __$$_TapOnUserFromListCopyWithImpl<_$_TapOnUserFromList>(
-          this, _$identity);
+  int get hashCode => runtimeType.hashCode;
 
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function() started,
     required TResult Function() loadData,
-    required TResult Function(User user) tapOnUserFromList,
+    required TResult Function() tapOnUserFromList,
   }) {
-    return tapOnUserFromList(user);
+    return tapOnUserFromList();
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? started,
     TResult? Function()? loadData,
-    TResult? Function(User user)? tapOnUserFromList,
+    TResult? Function()? tapOnUserFromList,
   }) {
-    return tapOnUserFromList?.call(user);
+    return tapOnUserFromList?.call();
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? started,
     TResult Function()? loadData,
-    TResult Function(User user)? tapOnUserFromList,
+    TResult Function()? tapOnUserFromList,
     required TResult orElse(),
   }) {
     if (tapOnUserFromList != null) {
-      return tapOnUserFromList(user);
+      return tapOnUserFromList();
     }
     return orElse();
   }
@@ -404,7 +245,6 @@ class _$_TapOnUserFromList implements _TapOnUserFromList {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_Started value) started,
     required TResult Function(_LoadData value) loadData,
     required TResult Function(_TapOnUserFromList value) tapOnUserFromList,
   }) {
@@ -414,7 +254,6 @@ class _$_TapOnUserFromList implements _TapOnUserFromList {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_Started value)? started,
     TResult? Function(_LoadData value)? loadData,
     TResult? Function(_TapOnUserFromList value)? tapOnUserFromList,
   }) {
@@ -424,7 +263,6 @@ class _$_TapOnUserFromList implements _TapOnUserFromList {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_Started value)? started,
     TResult Function(_LoadData value)? loadData,
     TResult Function(_TapOnUserFromList value)? tapOnUserFromList,
     required TResult orElse(),
@@ -437,12 +275,7 @@ class _$_TapOnUserFromList implements _TapOnUserFromList {
 }
 
 abstract class _TapOnUserFromList implements UserListEvent {
-  const factory _TapOnUserFromList(final User user) = _$_TapOnUserFromList;
-
-  User get user;
-  @JsonKey(ignore: true)
-  _$$_TapOnUserFromListCopyWith<_$_TapOnUserFromList> get copyWith =>
-      throw _privateConstructorUsedError;
+  const factory _TapOnUserFromList() = _$_TapOnUserFromList;
 }
 
 /// @nodoc
@@ -451,21 +284,21 @@ mixin _$UserListState {
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loading,
-    required TResult Function(List<User> userList) loaded,
+    required TResult Function() loaded,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
     TResult? Function()? loading,
-    TResult? Function(List<User> userList)? loaded,
+    TResult? Function()? loaded,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loading,
-    TResult Function(List<User> userList)? loaded,
+    TResult Function()? loaded,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -550,7 +383,7 @@ class _$_Initial implements _Initial {
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loading,
-    required TResult Function(List<User> userList) loaded,
+    required TResult Function() loaded,
   }) {
     return initial();
   }
@@ -560,7 +393,7 @@ class _$_Initial implements _Initial {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
     TResult? Function()? loading,
-    TResult? Function(List<User> userList)? loaded,
+    TResult? Function()? loaded,
   }) {
     return initial?.call();
   }
@@ -570,7 +403,7 @@ class _$_Initial implements _Initial {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loading,
-    TResult Function(List<User> userList)? loaded,
+    TResult Function()? loaded,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -657,7 +490,7 @@ class _$_Loading implements _Loading {
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loading,
-    required TResult Function(List<User> userList) loaded,
+    required TResult Function() loaded,
   }) {
     return loading();
   }
@@ -667,7 +500,7 @@ class _$_Loading implements _Loading {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
     TResult? Function()? loading,
-    TResult? Function(List<User> userList)? loaded,
+    TResult? Function()? loaded,
   }) {
     return loading?.call();
   }
@@ -677,7 +510,7 @@ class _$_Loading implements _Loading {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loading,
-    TResult Function(List<User> userList)? loaded,
+    TResult Function()? loaded,
     required TResult orElse(),
   }) {
     if (loading != null) {
@@ -729,8 +562,6 @@ abstract class _Loading implements UserListState {
 abstract class _$$_LoadedCopyWith<$Res> {
   factory _$$_LoadedCopyWith(_$_Loaded value, $Res Function(_$_Loaded) then) =
       __$$_LoadedCopyWithImpl<$Res>;
-  @useResult
-  $Res call({List<User> userList});
 }
 
 /// @nodoc
@@ -739,64 +570,35 @@ class __$$_LoadedCopyWithImpl<$Res>
     implements _$$_LoadedCopyWith<$Res> {
   __$$_LoadedCopyWithImpl(_$_Loaded _value, $Res Function(_$_Loaded) _then)
       : super(_value, _then);
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? userList = null,
-  }) {
-    return _then(_$_Loaded(
-      null == userList
-          ? _value._userList
-          : userList // ignore: cast_nullable_to_non_nullable
-              as List<User>,
-    ));
-  }
 }
 
 /// @nodoc
 
 class _$_Loaded implements _Loaded {
-  const _$_Loaded(final List<User> userList) : _userList = userList;
-
-  final List<User> _userList;
-  @override
-  List<User> get userList {
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_userList);
-  }
+  const _$_Loaded();
 
   @override
   String toString() {
-    return 'UserListState.loaded(userList: $userList)';
+    return 'UserListState.loaded()';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$_Loaded &&
-            const DeepCollectionEquality().equals(other._userList, _userList));
+        (other.runtimeType == runtimeType && other is _$_Loaded);
   }
 
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(_userList));
-
-  @JsonKey(ignore: true)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$_LoadedCopyWith<_$_Loaded> get copyWith =>
-      __$$_LoadedCopyWithImpl<_$_Loaded>(this, _$identity);
+  int get hashCode => runtimeType.hashCode;
 
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loading,
-    required TResult Function(List<User> userList) loaded,
+    required TResult Function() loaded,
   }) {
-    return loaded(userList);
+    return loaded();
   }
 
   @override
@@ -804,9 +606,9 @@ class _$_Loaded implements _Loaded {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
     TResult? Function()? loading,
-    TResult? Function(List<User> userList)? loaded,
+    TResult? Function()? loaded,
   }) {
-    return loaded?.call(userList);
+    return loaded?.call();
   }
 
   @override
@@ -814,11 +616,11 @@ class _$_Loaded implements _Loaded {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loading,
-    TResult Function(List<User> userList)? loaded,
+    TResult Function()? loaded,
     required TResult orElse(),
   }) {
     if (loaded != null) {
-      return loaded(userList);
+      return loaded();
     }
     return orElse();
   }
@@ -859,10 +661,5 @@ class _$_Loaded implements _Loaded {
 }
 
 abstract class _Loaded implements UserListState {
-  const factory _Loaded(final List<User> userList) = _$_Loaded;
-
-  List<User> get userList;
-  @JsonKey(ignore: true)
-  _$$_LoadedCopyWith<_$_Loaded> get copyWith =>
-      throw _privateConstructorUsedError;
+  const factory _Loaded() = _$_Loaded;
 }
